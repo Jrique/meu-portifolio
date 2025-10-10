@@ -1,0 +1,114 @@
+.projetos .container {
+  grid-template-columns: 1fr;
+}
+
+.projetos {
+  background: #000;
+  color: #fff;
+}
+
+.projetos .subtitulo {
+  max-width: 5ch;
+  color: #007bff;
+  display: grid;
+}
+
+.projetos-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px; /* Aumentei o espaçamento */
+  color: #e7e7e7;
+}
+
+.projetos-item img {
+  max-width: 100%;
+  margin-bottom: 20px; /* Adicionado espaço abaixo da imagem */
+}
+
+.projetos-descricao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.projetos-descricao {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  color: #a3a3a3;
+}
+
+.projetos-descricao strong {
+  color: #fff;
+}
+
+.projetos-descricao p {
+  padding: 30px 40px;
+}
+
+.projetos-item {
+  display: flex; /* Mudei para flexbox */
+  flex-direction: column; /* Itens em coluna */
+  background: #0d0d0d;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center; /* Centralizei o texto */
+}
+
+.projetos-item a {
+  display: inline-block;
+  line-height: 1.4;
+  border-radius: 5px;
+  color: #fff;
+  background: #007bff;
+  padding: 12.5px 15px;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.projetos-item h4 {
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.projetos-item p {
+  color: #a3a3a3;
+  margin: 10px 0 20px 0; /* Ajustei a margem */
+  flex-grow: 1; /* Faz o parágrafo ocupar o espaço disponível */
+}
+
+.projetos-item a:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 750px) {
+  .projetos-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .projetos-descricao {
+    grid-template-columns: 1fr;
+  }
+
+  .projetos .subtitulo {
+    font-size: 2.5rem;
+    max-width: initial;
+    padding: 20px 40px 0;
+    color: #007bff;
+  }
+
+  .projetos-descricao p {
+    font-size: 1rem;
+    line-height: 1.33;
+    color: #a3a3a3;
+    padding: 20px 40px 0;
+  }
+}
