@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <script> document.documentElement.className += ' js'</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Projeto Yourcine</title>
+</head>
+
+<body>
+  <header class="js-scroll">
+    <nav class="navbar">
+      <div class="navbar-titulo">
+        <h1><a href="index.html">José Henrique</a></h1>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container introducao js-scroll">
+    <div class="introducao-item">
+      <h1 class="js-scroll">Projeto Yourcine</h1>
+      <p class="js-scroll"><strong>Descrição:</strong> Interface de front-end para um catálogo de filmes e séries, com foco em uma experiência de usuário limpa e navegação intuitiva por categorias. O projeto simula uma plataforma de streaming com páginas de login e cadastro.</p><br>
+      <p class="js-scroll"><strong>Tecnologias Utilizadas:</strong> HTML5, CSS para estilização e layout responsivo (incluindo Bootstrap para a base), e JavaScript para a interatividade e validação de formulários.</p><br>
+      <p class="js-scroll"><strong>Minha Participação:</strong> Atuei como desenvolvedor front-end principal, responsável pela arquitetura do HTML, estilização dos componentes e implementação de scripts para criar uma interface dinâmica e funcional.</p>
+      <div class="container-social">
+        <a href="https://github.com/Jrique/Yourcine" target="_blank"><img src="./img/github.png" alt="GitHub"></a>
+      </div>
+    </div>
+    <div class="introducao-item memoji">
+      <img src="./img/projetos img/YourCinePc.png" alt="Imagem principal do Projeto Yourcine">
+    </div>
+  </main>
+
+  <section class="galeria-section">
+    <h2>Galeria</h2>
+    
+    <div class="galeria-wrapper"> 
+    
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/projetos img/cine1.png" alt="Screenshot 1 do Yourcine"></div>
+          <div class="swiper-slide"><img src="./img/projetos img/cine2.png" alt="Screenshot 2 do Yourcine"></div>
+          <div class="swiper-slide"><img src="./img/projetos img/cine3.png" alt="Screenshot 3 do Yourcine"></div>
+          <div class="swiper-slide"><img src="./img/projetos img/cine4.png" alt="Screenshot 4 do Yourcine"></div>
+          <div class="swiper-slide"><img src="./img/projetos img/cine5.png" alt="Screenshot 4 do Yourcine"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div> </section>
+
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa</p>
+      <ul class="footer-contato">
+        <li>j.henrique.motta.013@gmail.com</li>
+        <li>+55 11 96649-7380</li>
+      </ul>
+      <p class="footer-copy">Todos os direitos reservados a &copy;José Henrique Almeida Motta</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

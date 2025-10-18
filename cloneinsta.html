@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <script> document.documentElement.className += ' js'</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Projeto Clone do Instagram</title>
+</head>
+
+<body>
+  <header class="js-scroll">
+    <nav class="navbar">
+      <div class="navbar-titulo">
+        <h1><a href="index.html">José Henrique</a></h1>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container introducao js-scroll">
+    <div class="introducao-item">
+      <h1 class="js-scroll">Clone do Instagram</h1>
+      <p class="js-scroll"><strong>Descrição:</strong> Aplicação mobile que simula as funcionalidades principais do Instagram, incluindo feed de postagens, stories, perfis de usuário, comentários e sistema de autenticação, com todos os dados salvos localmente no dispositivo.</p><br>
+      <p class="js-scroll"><strong>Tecnologias Utilizadas:</strong> O app foi desenvolvido em React Native com Expo. Para o armazenamento de dados, foi utilizado o banco de dados local SQLite, gerenciado através do `expo-sqlite`.</p><br>
+      <p class="js-scroll"><strong>Minha Participação:</strong> Desenvolvi a aplicação do início ao fim, cuidando tanto da criação das interfaces e componentes em React Native quanto da implementação da base de dados com SQLite para gerenciar usuários, posts e stories de forma local.</p>
+      <div class="container-social">
+        <a href="https://github.com/Jrique/cloneinsta" target="_blank"><img src="./img/github.png" alt="GitHub"></a>
+      </div>
+    </div>
+    <div class="introducao-item memoji">
+        <img src="./img/projetos img/insta1.png" alt="Imagem principal do Projeto Clone do Instagram">
+    </div>
+  </main>
+
+  <section class="galeria-section">
+    <h2>Galeria</h2>
+    
+    <div class="galeria-wrapper"> 
+    
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/projetos img/insta2.png" alt="Screenshot 1 do Clone do Instagram"></div>
+          <div class="swiper-slide"><img src="./img/projetos img/insta3.png" alt="Screenshot 2 do Clone do Instagram"></div>
+          <div class="swiper-slide"><img src="./img/projetos img/insta4.png" alt="Screenshot 3 do Clone do Instagram"></div>
+          <div class="swiper-slide"><img src="./img/projetos img/insta 5.png" alt="Screenshot 4 do Clone do Instagram"></div>
+          <div class="swiper-slide"><img src="./img/projetos img/insta6.png" alt="Screenshot 4 do Clone do Instagram"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div> </section>
+
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa</p>
+      <ul class="footer-contato">
+        <li>j.henrique.motta.013@gmail.com</li>
+        <li>+55 11 96649-7380</li>
+      </ul>
+      <p class="footer-copy">Todos os direitos reservados a &copy;José Henrique Almeida Motta</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

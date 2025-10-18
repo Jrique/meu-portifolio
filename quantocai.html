@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <script> document.documentElement.className += ' js'</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Projeto Quanto Cairá?</title>
+</head>
+
+<body>
+  <header class="js-scroll">
+    <nav class="navbar">
+      <div class="navbar-titulo">
+        <h1><a href="index.html">José Henrique</a></h1>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container introducao js-scroll">
+    <div class="introducao-item">
+      <h1 class="js-scroll">Projeto Quanto Cairá?</h1>
+      <p class="js-scroll"><strong>Descrição:</strong> Uma calculadora de salário líquido desenvolvida para que o usuário possa simular de forma rápida e visual o valor que receberá após os descontos obrigatórios, como INSS e Imposto de Renda, além de Vale Transporte e outros descontos adicionais.</p><br>
+      <p class="js-scroll"><strong>Tecnologias Utilizadas:</strong> O projeto é uma aplicação web de front-end pura, construída com HTML5, CSS3 e JavaScript. Não utiliza frameworks, focando na manipulação direta do DOM para os cálculos e exibição de resultados.</p><br>
+      <p class="js-scroll"><strong>Minha Participação:</strong> Desenvolvi o projeto do início ao fim, sendo responsável pela criação da interface com HTML/CSS e, principalmente, pela implementação de toda a lógica de cálculo em JavaScript, incluindo as regras de faixas de desconto do INSS e IRRF.</p>
+      <div class="container-social">
+        <a href="https://github.com/Jrique/Quantocai" target="_blank"><img src="./img/github.png" alt="GitHub"></a>
+      </div>
+    </div>
+    <div class="introducao-item memoji">
+      <img src="./img/projetos img/quantocai.png" alt="Imagem principal do Projeto Quanto Cairá?">
+    </div>
+  </main>
+
+  <section class="galeria-section">
+    <h2>Galeria</h2>
+    
+    <div class="galeria-wrapper"> 
+    
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/projetos img/caira1.png" alt="Screenshot 1 do Quanto Cairá?"></div>
+          <div class="swiper-slide"><img src="./img/projetos img/caira2.png" alt="Screenshot 2 do Quanto Cairá?"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div> </section>
+
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa</p>
+      <ul class="footer-contato">
+        <li>j.henrique.motta.013@gmail.com</li>
+        <li>+55 11 96649-7380</li>
+      </ul>
+      <p class="footer-copy">Todos os direitos reservados a &copy;José Henrique Almeida Motta</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

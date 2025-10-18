@@ -4,10 +4,11 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 40px 20px;
+  align-items: center; 
 }
 
 .introducao {
-  align-items: end;
+  align-items: center;
   justify-items: start;
   padding-left: 60px;
 }
