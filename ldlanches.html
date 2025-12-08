@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <script> document.documentElement.className += ' js'</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Projeto LDLanches</title>
+</head>
+
+<body>
+  <header class="js-scroll">
+    <nav class="navbar">
+      <div class="navbar-titulo">
+        <h1><a href="index.html">José Henrique</a></h1>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container introducao js-scroll">
+    <div class="introducao-item">
+      <h1 class="js-scroll">Projeto LDLanches</h1>
+      <p class="js-scroll">
+        <strong>Descrição:</strong> Sistema de gestão para lanchonete delivery que centraliza pedidos,
+        status, catálogo de produtos e monitoramento de temperatura dos freezers.
+      </p><br>
+      <p class="js-scroll">
+        <strong>Tecnologias Utilizadas:</strong> Painel administrativo em
+        <strong>Kotlin Multiplatform (KMP)</strong> com <strong>Compose</strong>, cardápio web consumindo
+        APIs REST em <strong>Spring Boot</strong> e integração com dispositivo IoT <strong>ESP32</strong>
+        para leitura de temperatura.
+      </p><br>
+      <p class="js-scroll">
+        <strong>Minha Participação:</strong> Atuei no desenvolvimento do front-end, criando o painel
+        administrativo em KMP/Compose e a interface web do cardápio, incluindo a exibição dos dados de
+        temperatura enviados pelo ESP32.
+      </p>
+      <div class="container-social">
+        <a href="https://github.com/Jrique/Projeto-LDLanches" target="_blank">
+          <img src="./img/github.png" alt="GitHub">
+        </a>
+      </div>
+    </div>
+
+    <div class="introducao-item memoji">
+      <img src="./img/projetos img/LDLanches.png" alt="Imagem principal do Projeto LDLanches">
+    </div>
+  </main>
+
+  <section class="galeria-section">
+    <h2>Galeria</h2>
+    
+    <div class="galeria-wrapper"> 
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/projetos img/LDLanches1.png" alt="Screenshot 1 do Projeto LDLanches">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/projetos img/LDLanches2.png" alt="Screenshot 2 do Projeto LDLanches">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/projetos img/LDLanches3.png" alt="Screenshot 3 do Projeto LDLanches">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/projetos img/LDLanches4.png" alt="Screenshot 4 do Projeto LDLanches">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/projetos img/LDLanches5.png" alt="Screenshot 5 do Projeto LDLanches">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/projetos img/LDLanches6.png" alt="Screenshot 6 do Projeto LDLanches">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <p class="footer-texto">
+        Estou disponível para novos projetos no momento.
+        Entre em contato comigo e marcamos uma conversa
+      </p>
+      <ul class="footer-contato">
+        <li>j.henrique.motta.013@gmail.com</li>
+        <li>+55 11 96649-7380</li>
+      </ul>
+      <p class="footer-copy">
+        Todos os direitos reservados a &copy;José Henrique Almeida Motta
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
